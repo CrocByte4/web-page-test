@@ -46,3 +46,19 @@ function getTime() {
 
   document.write(message);
 }
+
+// function to get passcode from user (84Y8IG1)
+function enterPasscode() {
+  let answer;
+
+  //while answer is incorrect, keep asking
+  while (answer != `84Y8IG1`) {
+    answer = prompt("Please enter the passcode");
+
+    if (answer != `84Y8IG1`) {
+      alert("Passcode incorrect! Please enter the correct passcode");
+    } else {
+      alert("Passcode verified");
+    }
+  }
+}
